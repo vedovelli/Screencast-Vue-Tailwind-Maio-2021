@@ -1,4 +1,8 @@
 <template>
+  <div class="text-center">
+    <ved-heading type="1">Olá Mundo!</ved-heading>
+    <ved-button>Logout</ved-button>
+  </div>
   <base-container class="sm:p-8">
     <default-box v-for="item in list" :key="item.id" :highlight="item.promo">{{
       item.title
@@ -9,8 +13,10 @@
 <script>
 import BaseContainer from "./shared/BaseContainer.vue";
 import DefaultBox from "./shared/DefaultBox.vue";
+import VedButton from "./shared/VedButton.vue";
+import VedHeading from "./shared/VedHeading.vue";
 export default {
-  components: { BaseContainer, DefaultBox },
+  components: { BaseContainer, DefaultBox, VedHeading, VedButton },
   setup() {
     const list = [
       { id: 1, title: "Tailwind CSS" },

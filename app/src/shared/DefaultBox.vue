@@ -15,12 +15,12 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .default-box {
   @apply flex items-center justify-center bg-gray-200 h-52 w-full sm:rounded sm:shadow border border-gray-300;
 }
 
 .default-box.highlight {
-  @apply bg-red-400;
+  @apply bg-primary;
 }
 </style>
